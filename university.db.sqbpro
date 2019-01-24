@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/surya/Documents/Challenge/C14/university.db" foreign_keys="1"/><window><current_tab id="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1305"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="4" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="MATAKULIAH"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="DOSEN" sort_order_index="0" sort_order_mode="0" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="KONTRAK" sort_order_index="0" sort_order_mode="0" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="MATAKULIAH" sort_order_index="0" sort_order_mode="0" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings><tab_sql><sql name="SQL 1">CREATE TABLE JURUSAN(
+KODE_JURUSAN TEXT PRIMARY KEY,
+NAMA_JURUSAN TEXT NOT NULL
+);</sql><sql name="SQL 2">CREATE TABLE MAHASISWA(
+NIM TEXT PRIMARY KEY,
+NAMA TEXT NOT NULL,
+ALAMAT TEXT NOT NULL,
+KODE_JURUSAN TEXT NOT NULL,
+UMUR INT NOT NULL
+);</sql><sql name="SQL 3">CREATE TABLE DOSEN(
+ID_DOSEN TEXT PRIMARY KEY,
+NAMA TEXT NOT NULL
+);</sql><sql name="SQL 4">CREATE TABLE MATAKULIAH(
+KODE_MATAKULIAH TEXT PRIMARY KEY,
+NAMA_MATAKULIAH TEXT NOT NULL,
+SKS TEXT NOT NULL
+);</sql><sql name="SQL 5">CREATE TABLE KONTRAK(
+ID_KONTRAK INTEGER PRIMARY KEY AUTOINCREMENT,
+NIM TEXT NOT NULL,
+ID_DOSEN TEXT NOT NULL,
+ID_MATAKULIAH TEXT NOT NULL,
+NILAI TEXT NOT NULL
+);</sql><sql name="SQL 1"></sql><current_tab id="5"/></tab_sql></tab_browse></sqlb_project>
